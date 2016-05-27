@@ -1,0 +1,5315 @@
+version=52;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=513;
+	class ItemIDProvider
+	{
+		nextID=286;
+	};
+	class MarkerIDProvider
+	{
+		nextID=34;
+	};
+	class Camera
+	{
+		pos[]={3539.4341,16.474306,3235.6921};
+		dir[]={0.14869015,-0.74522287,0.65010911};
+		up[]={0.16617228,0.66670924,0.72654837};
+		aside[]={0.97487557,7.2395778e-010,-0.22296967};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F_BLUFOR",
+	"a3_characters_f",
+	"A3_Characters_F_Civil",
+	"A3_Characters_F_Gamma",
+	"A3_Structures_F_Civ_Garbage",
+	"A3_Structures_F_Mil_Helipads",
+	"A3_Characters_F_Kart",
+	"A3_Structures_F_EPC_Civ_Accessories"
+};
+randomSeed=16019483;
+class ScenarioData
+{
+	author="Rad1x";
+	class Header
+	{
+		gameType="RPG";
+	};
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="None";
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=3;
+	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.2;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.60000002;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2030;
+		month=3;
+		day=5;
+		hour=11;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Entities
+	{
+		items=143;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={97.3535,145.85042,4198.6392};
+			name="truck_1";
+			text="@STR_MAR_Truck_Shop";
+			type="c_car";
+			colorName="ColorBlack";
+			id=0;
+			atlOffset=166.03503;
+		};
+		class Item1
+		{
+			dataType="Marker";
+			position[]={97.285141,146.47221,3999.4673};
+			name="atm";
+			text="@STR_MAR_ATM";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=1;
+			atlOffset=166.03334;
+		};
+		class Item2
+		{
+			dataType="Marker";
+			position[]={93.44725,148.60393,3900.9429};
+			name="lbank";
+			text="@STR_MAR_Local_Bank";
+			type="loc_Tourism";
+			colorName="ColorBLUFOR";
+			id=2;
+			atlOffset=166.02946;
+		};
+		class Item3
+		{
+			dataType="Marker";
+			position[]={98.814438,151.15112,4304.0337};
+			name="Carshop";
+			text="@STR_MAR_Car_Shop";
+			type="c_car";
+			colorName="ColorWhite";
+			id=3;
+			atlOffset=165.95602;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={99.076157,145.36154,4098.1118};
+			name="Hospital_1";
+			text="@STR_MAR_Hospital_Clinic";
+			type="loc_Hospital";
+			colorName="ColorRed";
+			id=4;
+			atlOffset=166.00697;
+		};
+		class Item5
+		{
+			dataType="Marker";
+			position[]={92.233505,152.36401,3790.3159};
+			name="Gen_1";
+			text="@STR_MAR_Civilian_Shops";
+			type="c_unknown";
+			colorName="ColorGreen";
+			id=5;
+			atlOffset=165.97876;
+		};
+		class Item6
+		{
+			dataType="Marker";
+			position[]={90.784531,153.61195,3692.3569};
+			name="boat_1";
+			text="@STR_MAR_Boat_Shop";
+			type="c_ship";
+			colorName="ColorWhite";
+			id=6;
+			atlOffset=166.09471;
+		};
+		class Item7
+		{
+			dataType="Marker";
+			position[]={3668.615,22.20252,5457.6489};
+			name="respawn_civilian";
+			type="Empty";
+			id=8;
+		};
+		class Item8
+		{
+			dataType="Marker";
+			position[]={3526.5752,44.327148,5418.666};
+			name="Respawn_west";
+			type="Empty";
+			id=9;
+			atlOffset=-14.254875;
+		};
+		class Item9
+		{
+			dataType="Marker";
+			position[]={3568.2319,32.993591,5440.1841};
+			name="respawn_west_1";
+			type="Empty";
+			id=10;
+		};
+		class Item10
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=19;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3762.738,27.253601,5468.373};
+						angles[]={6.2731905,4.9885011,6.268187};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_1";
+						description="Public Slot - Cop 1";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=12;
+					type="B_medic_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3767.738,27.1413,5466.7246};
+						angles[]={0.0025135824,4.98035,6.2581916};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_2";
+						description="Public Slot - Cop 2";
+						isPlayable=1;
+					};
+					id=13;
+					type="B_medic_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3757.738,27.277618,5466.7246};
+						angles[]={6.255693,4.8629417,6.2731905};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_3";
+						description="Public Slot - Cop 3";
+						isPlayable=1;
+					};
+					id=14;
+					type="B_medic_F";
+					atlOffset=3.8146973e-006;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3772.738,27.034531,5463.9883};
+						angles[]={0.012496647,4.98035,6.2457032};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_4";
+						description="Public Slot - Cop 4";
+						isPlayable=1;
+					};
+					id=15;
+					type="B_medic_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3752.738,27.146664,5463.9883};
+						angles[]={6.218277,4.98035,0.012501417};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_5";
+						description="WhiteListed - Cop 5";
+						isPlayable=1;
+					};
+					id=16;
+					type="B_medic_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3777.738,26.900608,5459.4453};
+						angles[]={0,4.98035,6.2482009};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_6";
+						description="WhiteListed - Cop 6";
+						isPlayable=1;
+					};
+					id=17;
+					type="B_medic_F";
+					atlOffset=1.9073486e-006;
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3747.738,26.647942,5459.4453};
+						angles[]={6.1760969,4.98035,0.032489564};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_7";
+						description="WhiteListed - Cop 7";
+						isPlayable=1;
+					};
+					id=18;
+					type="B_medic_F";
+					atlOffset=1.9073486e-006;
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3762.738,27.254108,5468.4238};
+						angles[]={6.2731905,4.98035,6.268187};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_8";
+						description="WhiteListed - Cop 8";
+						isPlayable=1;
+					};
+					id=19;
+					type="B_medic_F";
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3762.738,27.254108,5468.4238};
+						angles[]={6.2731905,4.98035,6.268187};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_9";
+						description="WhiteListed - Cop 9";
+						isPlayable=1;
+					};
+					id=20;
+					type="B_medic_F";
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3767.738,27.141262,5466.7402};
+						angles[]={0.0025135824,4.98035,6.2581916};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_10";
+						description="WhiteListed - Cop 10";
+						isPlayable=1;
+					};
+					id=21;
+					type="B_medic_F";
+				};
+				class Item10
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3757.738,27.278049,5466.7402};
+						angles[]={6.255693,4.98035,6.2731905};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_11";
+						description="WhiteListed - Cop 11";
+						isPlayable=1;
+					};
+					id=22;
+					type="B_medic_F";
+					atlOffset=3.8146973e-006;
+				};
+				class Item11
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3772.738,27.034214,5464.0137};
+						angles[]={0.012496647,4.98035,6.2457032};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_12";
+						description="WhiteListed - Cop 12";
+						isPlayable=1;
+					};
+					id=23;
+					type="B_medic_F";
+				};
+				class Item12
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3752.738,27.148315,5464.0137};
+						angles[]={6.218277,4.98035,0.012501417};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_13";
+						description="WhiteListed - Cop 13";
+						isPlayable=1;
+					};
+					id=24;
+					type="B_medic_F";
+				};
+				class Item13
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3777.738,26.900608,5459.4863};
+						angles[]={0,5.1804867,6.2482009};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_14";
+						description="WhiteListed - Cop 14";
+						isPlayable=1;
+					};
+					id=25;
+					type="B_medic_F";
+					atlOffset=1.9073486e-006;
+				};
+				class Item14
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3747.738,26.652351,5459.4863};
+						angles[]={6.1760969,4.98035,0.032489564};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_15";
+						description="WhiteListed - Cop 15";
+						isPlayable=1;
+					};
+					id=26;
+					type="B_medic_F";
+					atlOffset=1.9073486e-006;
+				};
+				class Item15
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3782.738,26.709759,5454.5371};
+						angles[]={6.268187,4.98035,6.2506976};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_16";
+						description="WhiteListed - Cop 16";
+						isPlayable=1;
+					};
+					id=27;
+					type="B_medic_F";
+					atlOffset=-1.9073486e-006;
+				};
+				class Item16
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3762.738,27.254108,5468.4238};
+						angles[]={6.2731905,4.98035,6.268187};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_17";
+						description="WhiteListed - Cop 17";
+						isPlayable=1;
+					};
+					id=28;
+					type="B_medic_F";
+				};
+				class Item17
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3762.738,27.254108,5468.4238};
+						angles[]={6.2731905,4.98035,6.268187};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_18";
+						description="WhiteListed - Cop 18";
+						isPlayable=1;
+					};
+					id=29;
+					type="B_medic_F";
+				};
+				class Item18
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3757.738,27.278049,5466.7402};
+						angles[]={6.255693,4.98035,6.2731905};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						init="removeBackpack this; removeAllWeapons this;";
+						name="cop_19";
+						description="WhiteListed - Cop 19";
+						isPlayable=1;
+					};
+					id=30;
+					type="B_medic_F";
+					atlOffset=3.8146973e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=11;
+		};
+		class Item11
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3636.1238,26.043356,5545.4258};
+						angles[]={0.072372913,0.29628009,0.042475242};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_1";
+						description="Civ 1";
+						isPlayable=1;
+					};
+					id=32;
+					type="C_man_1";
+					atlOffset=0.12641525;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=31;
+			atlOffset=0.12641525;
+		};
+		class Item12
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3638.2742,26.200687,5544.5508};
+						angles[]={0.072372913,0.51037616,0.042475242};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_2";
+						description="Civ 2";
+						isPlayable=1;
+					};
+					id=34;
+					type="C_man_polo_6_F";
+					atlOffset=0.12891769;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=33;
+			atlOffset=0.12891769;
+		};
+		class Item13
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3640.4597,26.395618,5543.0977};
+						angles[]={0.057436496,0.29627663,0.062419467};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_3";
+						description="Civ 3";
+						isPlayable=1;
+					};
+					id=36;
+					type="C_man_1";
+					atlOffset=0.13069916;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=35;
+			atlOffset=0.13069916;
+		};
+		class Item14
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3642.1619,26.559216,5541.7891};
+						angles[]={0.057436496,0.51037616,0.062419467};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_4";
+						description="Civ 4";
+						isPlayable=1;
+					};
+					id=38;
+					type="C_man_polo_6_F";
+					atlOffset=0.11266899;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=37;
+			atlOffset=0.11266899;
+		};
+		class Item15
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3644.6941,26.820221,5540.1719};
+						angles[]={0.06739822,0.29627663,0.06739822};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_5";
+						description="Civ 5";
+						isPlayable=1;
+					};
+					id=40;
+					type="C_man_1";
+					atlOffset=0.12017059;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=39;
+			atlOffset=0.12017059;
+		};
+		class Item16
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3634.4753,26.091459,5543.5898};
+						angles[]={0.039977662,0.29628009,0.042473838};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_6";
+						description="Civ 6";
+						isPlayable=1;
+					};
+					id=42;
+					type="C_man_1";
+					atlOffset=0.12642097;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=41;
+			atlOffset=0.12642097;
+		};
+		class Item17
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3637.489,26.289343,5542.1055};
+						angles[]={0.039979152,0.51037616,0.059928458};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_7";
+						description="Civ 7";
+						isPlayable=1;
+					};
+					id=44;
+					type="C_man_polo_6_F";
+					atlOffset=0.11079025;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=43;
+			atlOffset=0.11079025;
+		};
+		class Item18
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3639.6746,26.473755,5540.6523};
+						angles[]={0.057436496,0.29627663,0.042475242};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_8";
+						description="Civ 8";
+						isPlayable=1;
+					};
+					id=46;
+					type="C_man_1";
+					atlOffset=0.11079407;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=45;
+			atlOffset=0.11079407;
+		};
+		class Item19
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3641.7234,26.682295,5539.1836};
+						angles[]={0.052452512,0.51037616,0.062418513};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_9";
+						description="Civ 9";
+						isPlayable=1;
+					};
+					id=48;
+					type="C_man_polo_6_F";
+					atlOffset=0.11766815;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=47;
+			atlOffset=0.11766815;
+		};
+		class Item20
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3643.9089,26.87101,5537.7266};
+						angles[]={0.052452512,0.29627663,0.062418513};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_10";
+						description="Civ 10";
+						isPlayable=1;
+					};
+					id=50;
+					type="C_man_1";
+					atlOffset=0.093292236;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=49;
+			atlOffset=0.093292236;
+		};
+		class Item21
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3633.7097,26.098446,5542.082};
+						angles[]={0.019999012,0.29628009,0.062419467};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_11";
+						description="Civ 11";
+						isPlayable=1;
+					};
+					id=52;
+					type="C_man_1";
+					atlOffset=0.11079407;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=51;
+			atlOffset=0.11079407;
+		};
+		class Item22
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3636.7234,26.308725,5540.5977};
+						angles[]={0.039979152,0.51037616,0.059928458};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_12";
+						description="Civ 12";
+						isPlayable=1;
+					};
+					id=54;
+					type="C_man_polo_6_F";
+					atlOffset=0.11579704;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=53;
+			atlOffset=0.11579704;
+		};
+		class Item23
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3638.9089,26.502506,5539.1445};
+						angles[]={0.044969428,0.29627663,0.059927464};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_13";
+						description="Civ 13";
+						isPlayable=1;
+					};
+					id=56;
+					type="C_man_1";
+					atlOffset=0.11579514;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=55;
+			atlOffset=0.11579514;
+		};
+		class Item24
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3640.9578,26.687532,5537.6719};
+						angles[]={0.044969428,0.51037616,0.06988623};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_14";
+						description="Civ 14";
+						isPlayable=1;
+					};
+					id=58;
+					type="C_man_polo_6_F";
+					atlOffset=0.10204506;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=57;
+			atlOffset=0.10204506;
+		};
+		class Item25
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3643.1433,26.897165,5536.2188};
+						angles[]={0.044969428,0.29627663,0.06988623};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_15";
+						description="Civ 15";
+						isPlayable=1;
+					};
+					id=60;
+					type="C_man_1";
+					atlOffset=0.093297958;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=59;
+			atlOffset=0.093297958;
+		};
+		class Item26
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3632.4363,26.049301,5540.7031};
+						angles[]={0.019999012,0.29628009,0.062419467};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_16";
+						description="Civ 16";
+						isPlayable=1;
+					};
+					id=62;
+					type="C_man_1";
+					atlOffset=0.11366272;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=61;
+			atlOffset=0.11366272;
+		};
+		class Item27
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3635.448,26.275694,5539.2148};
+						angles[]={0.027492445,0.51037616,0.062418513};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_17";
+						description="Civ 17";
+						isPlayable=1;
+					};
+					id=64;
+					type="C_man_polo_6_F";
+					atlOffset=0.11579514;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=63;
+			atlOffset=0.11579514;
+		};
+		class Item28
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3637.6335,26.454254,5537.7617};
+						angles[]={0.027494613,0.29627663,0.077345207};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_18";
+						description="Civ 18";
+						isPlayable=1;
+					};
+					id=66;
+					type="C_man_1";
+					atlOffset=0.093292236;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=65;
+			atlOffset=0.093292236;
+		};
+		class Item29
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3639.6824,26.653427,5536.293};
+						angles[]={0.027494613,0.51037616,0.077345207};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_19";
+						description="Civ 19";
+						isPlayable=1;
+					};
+					id=68;
+					type="C_man_polo_6_F";
+					atlOffset=0.093292236;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=67;
+			atlOffset=0.093292236;
+		};
+		class Item30
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3641.8679,26.872795,5534.8359};
+						angles[]={0.039979152,0.29627663,0.06988623};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_20";
+						description="Civ 20";
+						isPlayable=1;
+					};
+					id=70;
+					type="C_man_1";
+					atlOffset=0.10204697;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=69;
+			atlOffset=0.10204697;
+		};
+		class Item31
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3631.5222,26.005953,5539.4063};
+						angles[]={0.0049914722,0.29628009,0.067397334};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_21";
+						description="Civ 21";
+						isPlayable=1;
+					};
+					id=72;
+					type="C_man_1";
+					atlOffset=0.11354828;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=71;
+			atlOffset=0.11354828;
+		};
+		class Item32
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3634.5339,26.232874,5537.9219};
+						angles[]={0.027492445,0.51037616,0.062418513};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_22";
+						description="Civ 22";
+						isPlayable=1;
+					};
+					id=74;
+					type="C_man_polo_6_F";
+					atlOffset=0.094547272;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=73;
+			atlOffset=0.094547272;
+		};
+		class Item33
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3636.7195,26.426582,5536.4648};
+						angles[]={0.027494613,0.29627663,0.077345207};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_23";
+						description="Civ 23";
+						isPlayable=1;
+					};
+					id=76;
+					type="C_man_1";
+					atlOffset=0.10079765;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=75;
+			atlOffset=0.10079765;
+		};
+		class Item34
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3638.7683,26.617853,5534.9961};
+						angles[]={0.019996032,0.51037616,0.077345207};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_24";
+						description="Civ 24";
+						isPlayable=1;
+					};
+					id=78;
+					type="C_man_polo_6_F";
+					atlOffset=0.10079575;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=77;
+			atlOffset=0.10079575;
+		};
+		class Item35
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3640.9539,26.81134,5533.543};
+						angles[]={0.019996032,0.29627663,0.089758366};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_25";
+						description="Civ 25";
+						isPlayable=1;
+					};
+					id=80;
+					type="C_man_1";
+					atlOffset=0.083917618;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=79;
+			atlOffset=0.083917618;
+		};
+		class Item36
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3630.7136,25.937683,5538.4688};
+						angles[]={0.0049914722,0.29628009,0.067397334};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_26";
+						description="Civ 26";
+						isPlayable=1;
+					};
+					id=82;
+					type="C_man_1";
+					atlOffset=0.095169067;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=81;
+			atlOffset=0.095169067;
+		};
+		class Item37
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3633.7273,26.185631,5536.9844};
+						angles[]={0.0050033992,0.51037616,0.084796004};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_27";
+						description="Civ 27";
+						isPlayable=1;
+					};
+					id=84;
+					type="C_man_polo_6_F";
+					atlOffset=0.10204506;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=83;
+			atlOffset=0.10204506;
+		};
+		class Item38
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3635.9128,26.368578,5535.5313};
+						angles[]={0,0.29627663,0.084796004};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_28";
+						description="Civ 28";
+						isPlayable=1;
+					};
+					id=86;
+					type="C_man_1";
+					atlOffset=0.094547272;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=85;
+			atlOffset=0.094547272;
+		};
+		class Item39
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3637.9617,26.547251,5534.0586};
+						angles[]={0,0.51037616,0.09719272};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_29";
+						description="Civ 29";
+						isPlayable=1;
+					};
+					id=88;
+					type="C_man_polo_6_F";
+					atlOffset=0.074548721;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=87;
+			atlOffset=0.074548721;
+		};
+		class Item40
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3640.1472,26.748119,5532.6055};
+						angles[]={0.019996032,0.29627663,0.089758366};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_30";
+						description="Civ 30";
+						isPlayable=1;
+					};
+					id=90;
+					type="C_man_1";
+					atlOffset=0.074544907;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=89;
+			atlOffset=0.074544907;
+		};
+		class Item41
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3629.8464,25.887337,5537.2148};
+						angles[]={0.0024897563,0.29628009,0.069885373};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_31";
+						description="Civ 31";
+						isPlayable=1;
+					};
+					id=92;
+					type="C_man_1";
+					atlOffset=0.099559784;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=91;
+			atlOffset=0.099559784;
+		};
+		class Item42
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3632.8582,26.116426,5535.7266};
+						angles[]={0,0.51037616,0.084796004};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_32";
+						description="Civ 32";
+						isPlayable=1;
+					};
+					id=94;
+					type="C_man_polo_6_F";
+					atlOffset=0.10204506;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=93;
+			atlOffset=0.10204506;
+		};
+		class Item43
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3635.0437,26.277824,5534.2734};
+						angles[]={0,0.29627663,0.084796004};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_33";
+						description="Civ 33";
+						isPlayable=1;
+					};
+					id=96;
+					type="C_man_1";
+					atlOffset=0.077671051;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=95;
+			atlOffset=0.077671051;
+		};
+		class Item44
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3637.0925,26.473757,5532.8047};
+						angles[]={0,0.51037616,0.09719272};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_34";
+						description="Civ 34";
+						isPlayable=1;
+					};
+					id=98;
+					type="C_man_polo_6_F";
+					atlOffset=0.085796356;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=97;
+			atlOffset=0.085796356;
+		};
+		class Item45
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3639.2781,26.695623,5531.3477};
+						angles[]={0.012496647,0.29627663,0.09719272};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_35";
+						description="Civ 35";
+						isPlayable=1;
+					};
+					id=100;
+					type="C_man_1";
+					atlOffset=0.085794449;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=99;
+			atlOffset=0.085794449;
+		};
+		class Item46
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3628.7195,25.809647,5535.2813};
+						angles[]={6.2581916,0.29628009,0.089758366};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_36";
+						description="Civ 36";
+						isPlayable=1;
+					};
+					id=102;
+					type="C_man_1";
+					atlOffset=0.10267067;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=101;
+			atlOffset=0.10267067;
+		};
+		class Item47
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3631.7332,25.991028,5533.793};
+						angles[]={6.278182,0.51037616,0.06988623};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_37";
+						description="Civ 37";
+						isPlayable=1;
+					};
+					id=104;
+					type="C_man_polo_6_F";
+					atlOffset=0.079551697;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=103;
+			atlOffset=0.079551697;
+		};
+		class Item48
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3633.9187,26.183243,5532.3398};
+						angles[]={6.278182,0.29627663,0.089758366};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_38";
+						description="Civ 38";
+						isPlayable=1;
+					};
+					id=106;
+					type="C_man_1";
+					atlOffset=0.08767128;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=105;
+			atlOffset=0.08767128;
+		};
+		class Item49
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3635.9675,26.357346,5530.8711};
+						angles[]={6.2756844,0.51037616,0.089758366};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_39";
+						description="Civ 39";
+						isPlayable=1;
+					};
+					id=108;
+					type="C_man_polo_6_F";
+					atlOffset=0.087669373;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=107;
+			atlOffset=0.087669373;
+		};
+		class Item50
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3638.1531,26.572327,5529.4141};
+						angles[]={6.2756844,0.29627663,0.11696337};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_40";
+						description="Civ 40";
+						isPlayable=1;
+					};
+					id=110;
+					type="C_man_1";
+					atlOffset=0.057668686;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=109;
+			atlOffset=0.057668686;
+		};
+		class Item51
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3627.0867,25.606937,5533.1367};
+						angles[]={6.2581892,0.51037616,0.07237374};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_41";
+						description="Civ 41";
+						isPlayable=1;
+					};
+					id=112;
+					type="C_man_polo_4_F";
+					atlOffset=0.084543228;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=111;
+			atlOffset=0.084543228;
+		};
+		class Item52
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3629.6804,25.795416,5531.7813};
+						angles[]={6.2531958,0.51037616,0.089758366};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_42";
+						description="Civ 42";
+						isPlayable=1;
+					};
+					id=114;
+					type="C_man_1_2_F";
+					atlOffset=0.090797424;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=113;
+			atlOffset=0.090797424;
+		};
+		class Item53
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3632.5457,26.002274,5530.2695};
+						angles[]={6.2531958,0.51037616,0.11202893};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_43";
+						description="Civ 43";
+						isPlayable=1;
+					};
+					id=116;
+					type="C_man_polo_1_F";
+					atlOffset=0.072856903;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=115;
+			atlOffset=0.072856903;
+		};
+		class Item54
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3634.6746,26.191393,5528.9922};
+						angles[]={6.2531958,0.51037616,0.11202893};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_44";
+						description="Civ 44";
+						isPlayable=1;
+					};
+					id=118;
+					type="C_man_1_3_F";
+					atlOffset=0.06079483;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=117;
+			atlOffset=0.06079483;
+		};
+		class Item55
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3637.114,26.441977,5527.5234};
+						angles[]={6.2631865,0.51037616,0.11696389};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_45";
+						description="Civ 45";
+						isPlayable=1;
+					};
+					id=120;
+					type="C_man_1_3_F";
+					atlOffset=0.070169449;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=119;
+			atlOffset=0.070169449;
+		};
+		class Item56
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3625.8445,25.455456,5531.3789};
+						angles[]={6.2432065,0.51037616,0.079829417};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_46";
+						description="Civ 46";
+						isPlayable=1;
+					};
+					id=122;
+					type="C_man_polo_4_F";
+					atlOffset=0.093296051;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=121;
+			atlOffset=0.093296051;
+		};
+		class Item57
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3628.4382,25.596405,5530.0234};
+						angles[]={6.2432065,0.51037616,0.09966857};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_47";
+						description="Civ 47";
+						isPlayable=1;
+					};
+					id=124;
+					type="C_man_1_2_F";
+					atlOffset=0.072198868;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=123;
+			atlOffset=0.072198868;
+		};
+		class Item58
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3631.3035,25.81496,5528.5156};
+						angles[]={6.2432065,0.51037616,0.09966857};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_48";
+						description="Civ 48";
+						isPlayable=1;
+					};
+					id=126;
+					type="C_man_polo_1_F";
+					atlOffset=0.06454277;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=125;
+			atlOffset=0.06454277;
+		};
+		class Item59
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3633.4324,26.011532,5527.2383};
+						angles[]={6.2531958,0.51037616,0.11202893};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_49";
+						description="Civ 49";
+						isPlayable=1;
+					};
+					id=128;
+					type="C_man_1_3_F";
+					atlOffset=0.073297501;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=127;
+			atlOffset=0.073297501;
+		};
+		class Item60
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3635.8718,26.213041,5525.7656};
+						angles[]={6.2531958,0.51037616,0.11202893};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_50";
+						description="Civ 50";
+						isPlayable=1;
+					};
+					id=130;
+					type="C_man_1_3_F";
+					atlOffset=0.044548035;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=129;
+			atlOffset=0.044548035;
+		};
+		class Item61
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3624.655,25.260057,5529.9219};
+						angles[]={6.223258,0.51037616,0.09966857};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_51";
+						description="Civ 51";
+						isPlayable=1;
+					};
+					id=132;
+					type="C_man_polo_4_F";
+					atlOffset=0.080793381;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=131;
+			atlOffset=0.080793381;
+		};
+		class Item62
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3627.2488,25.425608,5528.5664};
+						angles[]={6.223258,0.51037616,0.09966857};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_52";
+						description="Civ 52";
+						isPlayable=1;
+					};
+					id=134;
+					type="C_man_1_2_F";
+					atlOffset=0.068296432;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=133;
+			atlOffset=0.068296432;
+		};
+		class Item63
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3630.114,25.648832,5527.0547};
+						angles[]={6.2432065,0.51037616,0.09966857};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_53";
+						description="Civ 53";
+						isPlayable=1;
+					};
+					id=136;
+					type="C_man_polo_1_F";
+					atlOffset=0.075798035;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=135;
+			atlOffset=0.075798035;
+		};
+		class Item64
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3632.2449,25.78883,5525.7773};
+						angles[]={6.2432079,0.51037616,0.12189256};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_54";
+						description="Civ 54";
+						isPlayable=1;
+					};
+					id=138;
+					type="C_man_1_3_F";
+					atlOffset=0.048294067;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=137;
+			atlOffset=0.048294067;
+		};
+		class Item65
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3634.6843,26.035095,5524.3086};
+						angles[]={6.2432079,0.51037616,0.12189256};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_55";
+						description="Civ 55";
+						isPlayable=1;
+					};
+					id=140;
+					type="C_man_1_3_F";
+					atlOffset=0.054475784;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=139;
+			atlOffset=0.054475784;
+		};
+		class Item66
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3633.5906,25.852573,5522.9297};
+						angles[]={6.2457032,0.51037616,0.12189256};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_56";
+						description="Civ 56";
+						isPlayable=1;
+					};
+					id=142;
+					type="C_man_1_3_F";
+					atlOffset=0.058294296;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=141;
+			atlOffset=0.058294296;
+		};
+		class Item67
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3630.9558,25.580683,5524.3086};
+						angles[]={6.220767,0.51037616,0.12189306};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_57";
+						description="Civ 57";
+						isPlayable=1;
+					};
+					id=144;
+					type="C_man_1_3_F";
+					atlOffset=0.050983429;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=143;
+			atlOffset=0.050983429;
+		};
+		class Item68
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3629.0125,25.448439,5525.8047};
+						angles[]={6.220767,0.51037616,0.12189306};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_58";
+						description="Civ 58";
+						isPlayable=1;
+					};
+					id=146;
+					type="C_man_1_3_F";
+					atlOffset=0.063295364;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=145;
+			atlOffset=0.063295364;
+		};
+		class Item69
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3626.3796,25.255806,5527.0195};
+						angles[]={6.220767,0.51037616,0.09966857};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_59";
+						description="Civ 59";
+						isPlayable=1;
+					};
+					id=148;
+					type="C_man_1_3_F";
+					atlOffset=0.080797195;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=147;
+			atlOffset=0.080797195;
+		};
+		class Item70
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3623.2195,25.053106,5528.7227};
+						angles[]={6.2157884,0.51037616,0.087277837};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_60";
+						description="Civ 60";
+						isPlayable=1;
+					};
+					id=150;
+					type="C_man_1_3_F";
+					atlOffset=0.074544907;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=149;
+			atlOffset=0.074544907;
+		};
+		class Item71
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3632.5652,25.624428,5521.5352};
+						angles[]={6.225749,0.51037616,0.14154701};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_61";
+						description="Civ 61";
+						isPlayable=1;
+					};
+					id=152;
+					type="C_man_1_3_F";
+					atlOffset=0.047042847;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=151;
+			atlOffset=0.047042847;
+		};
+		class Item72
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3629.8914,25.385834,5522.9961};
+						angles[]={6.2257481,0.51037616,0.12189256};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_62";
+						description="Civ 62";
+						isPlayable=1;
+					};
+					id=154;
+					type="C_man_1_3_F";
+					atlOffset=0.063293457;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=153;
+			atlOffset=0.063293457;
+		};
+		class Item73
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3627.946,25.220913,5524.375};
+						angles[]={6.220767,0.51037616,0.09966857};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_63";
+						description="Civ 63";
+						isPlayable=1;
+					};
+					id=156;
+					type="C_man_1_3_F";
+					atlOffset=0.054546356;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=155;
+			atlOffset=0.054546356;
+		};
+		class Item74
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3625.407,25.036797,5525.5078};
+						angles[]={6.2083263,0.51037616,0.11202893};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_64";
+						description="Civ 64";
+						isPlayable=1;
+					};
+					id=158;
+					type="C_man_1_3_F";
+					atlOffset=0.067722321;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=157;
+			atlOffset=0.067722321;
+		};
+		class Item75
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3622.1648,24.871647,5527.3164};
+						angles[]={6.2083263,0.51037616,0.087277152};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_65";
+						description="Civ 65";
+						isPlayable=1;
+					};
+					id=160;
+					type="C_man_1_3_F";
+					atlOffset=0.085792542;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=159;
+			atlOffset=0.085792542;
+		};
+		class Item76
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3653.8728,28.045362,5526.9004};
+						angles[]={0.044969428,6.2545137,0.072372913};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_70";
+						description="Civ 70";
+						isPlayable=1;
+					};
+					id=162;
+					type="C_man_1_3_F";
+					atlOffset=0.066421509;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=161;
+			atlOffset=0.066421509;
+		};
+		class Item77
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3651.9167,27.855013,5527.6992};
+						angles[]={0.039977662,0.51037616,0.074860021};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_69";
+						description="Civ 69";
+						isPlayable=1;
+					};
+					id=164;
+					type="C_man_1_3_F";
+					atlOffset=0.05579567;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=163;
+			atlOffset=0.05579567;
+		};
+		class Item78
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3649.9714,27.660282,5529.0742};
+						angles[]={0.039977662,0.51037616,0.074860021};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_68";
+						description="Civ 68";
+						isPlayable=1;
+					};
+					id=166;
+					type="C_man_1_3_F";
+					atlOffset=0.061962128;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=165;
+			atlOffset=0.061962128;
+		};
+		class Item79
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3647.4324,27.416967,5530.2109};
+						angles[]={0.039977662,0.51037616,0.074859224};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_67";
+						description="Civ 67";
+						isPlayable=1;
+					};
+					id=168;
+					type="C_man_1_3_F";
+					atlOffset=0.054546356;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=167;
+			atlOffset=0.054546356;
+		};
+		class Item80
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3644.1902,27.122084,5532.0195};
+						angles[]={0.039977662,0.51037616,0.074859224};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_66";
+						description="Civ 66";
+						isPlayable=1;
+					};
+					id=170;
+					type="C_man_1_3_F";
+					atlOffset=0.075170517;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=169;
+			atlOffset=0.075170517;
+		};
+		class Item81
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3653.3601,28.084009,5524.5469};
+						angles[]={0.039979152,0.51037616,0.077345207};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_75";
+						description="Civ 75";
+						isPlayable=1;
+					};
+					id=172;
+					type="C_man_1_3_F";
+					atlOffset=0.047044754;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=171;
+			atlOffset=0.047044754;
+		};
+		class Item82
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3650.6843,27.811646,5526.0039};
+						angles[]={0.039977662,0.51037616,0.074860021};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_74";
+						description="Civ 74";
+						isPlayable=1;
+					};
+					id=174;
+					type="C_man_1_3_F";
+					atlOffset=0.037046432;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=173;
+			atlOffset=0.037046432;
+		};
+		class Item83
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3648.739,27.639339,5527.3828};
+						angles[]={0.039977662,0.51037616,0.074860021};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_73";
+						description="Civ 73";
+						isPlayable=1;
+					};
+					id=176;
+					type="C_man_1_3_F";
+					atlOffset=0.065795898;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=175;
+			atlOffset=0.065795898;
+		};
+		class Item84
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3646.2,27.376913,5528.5156};
+						angles[]={0.019996032,0.51037616,0.094715387};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_72";
+						description="Civ 72";
+						isPlayable=1;
+					};
+					id=178;
+					type="C_man_1_3_F";
+					atlOffset=0.065793991;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=177;
+			atlOffset=0.065793991;
+		};
+		class Item85
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3642.9597,27.02804,5530.3281};
+						angles[]={0.019996032,0.51037616,0.089758366};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="civ_71";
+						description="Civ 71";
+						isPlayable=1;
+					};
+					id=180;
+					type="C_man_1_3_F";
+					atlOffset=0.055793762;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=179;
+			atlOffset=0.055793762;
+		};
+		class Item86
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3626.7781,19.655346,5458.457};
+						angles[]={0.022495884,3.1817701,0.042473838};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="hc_1";
+						description="Headless Client";
+						isPlayable=1;
+					};
+					id=182;
+					type="I_Story_Colonel_F";
+					atlOffset=1.9073486e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=181;
+			atlOffset=1.9073486e-006;
+		};
+		class Item87
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3614.5037,19.220284,5486.2051};
+						angles[]={6.2058401,3.2307963,0.15133385};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="medic_1";
+						description="EMS Medic";
+						isPlayable=1;
+					};
+					id=184;
+					type="B_medic_F";
+					atlOffset=1.9073486e-006;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3614.8103,19.406151,5488};
+						angles[]={6.2058401,3.2307963,0.15133385};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="medic_3";
+						description="EMS Medic";
+						isPlayable=1;
+					};
+					id=185;
+					type="B_medic_F";
+					atlOffset=1.9073486e-006;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3617.2556,19.776051,5487.7285};
+						angles[]={6.2033544,3.2307963,0.16595918};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="medic_4";
+						description="EMS Medic";
+						isPlayable=1;
+					};
+					id=186;
+					type="B_medic_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3617.8015,19.73679,5486.0898};
+						angles[]={6.2058401,3.2307963,0.16352627};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="medic_2";
+						description="EMS Medic";
+						isPlayable=1;
+					};
+					id=187;
+					type="B_medic_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=183;
+			atlOffset=1.9073486e-006;
+		};
+		class Item88
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3445.2358,32.195549,5379.5977};
+				angles[]={5.5933857,0,0.22844139};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="bank_obj";
+			};
+			id=188;
+			type="Land_Garbage_line_F";
+		};
+		class Item89
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3614.6582,49.574669,5358.4106};
+						angles[]={5.4817982,2.7592132,5.9917283};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="COLONEL";
+						init="this enableSimulation false; this allowDamage false; this hideObject true;";
+						name="master_group";
+						description="Master Group for NPC's";
+					};
+					id=190;
+					type="C_man_1";
+					atlOffset=0.18312454;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=189;
+			atlOffset=0.18312454;
+		};
+		class Item90
+		{
+			dataType="Marker";
+			position[]={3901.8506,15,3263.2402};
+			name="cop_spawn_1";
+			type="Empty";
+			angle=224.26031;
+			id=196;
+		};
+		class Item91
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3880.394,15.038439,3250.6479};
+						angles[]={0,4.8238454,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						init="this enableSimulation false;  this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""];  this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[localize""STR_MAR_Patrol_Officer_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_patrol""];  this addAction[localize""STR_MAR_Sergeant_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_sergeant""];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide == west '];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide == west ']; this setObjectTextureGlobal [0,""textures\cop_uniform.jpg""];";
+						name="h1_3";
+					};
+					id=213;
+					type="B_RangeMaster_F";
+					atlOffset=0.036999702;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=198;
+			atlOffset=0.036999702;
+		};
+		class Item92
+		{
+			dataType="Marker";
+			position[]={3872.7959,15.037325,3255.6729};
+			name="cop_car_1";
+			type="Empty";
+			angle=8.1329956;
+			id=202;
+		};
+		class Item93
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3877.4351,15.038439,3249.5352};
+						angles[]={0,0.12795009,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						init="this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_1"",""cop"",""APD - Kavala District""]];  this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Cop Vehicle Store""]; this setObjectTextureGlobal [0,""textures\cop_uniform.jpg""];";
+					};
+					id=214;
+					type="B_RangeMaster_F";
+					atlOffset=0.036999702;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=203;
+			atlOffset=0.036999702;
+		};
+		class Item94
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3911.8059,15.001439,3282.9919};
+						angles[]={0,4.8345098,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_1"",""cop"",""APD - Kavala District""]];  this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTextureGlobal [0,""textures\cop_uniform.jpg""];";
+					};
+					id=212;
+					type="B_RangeMaster_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=211;
+		};
+		class Item95
+		{
+			dataType="Marker";
+			position[]={3902.0022,15,3276.5093};
+			name="cop_air_1";
+			type="Empty";
+			id=215;
+		};
+		class Item96
+		{
+			dataType="Marker";
+			position[]={3883.2102,15.037325,3255.0625};
+			name="police_hq_1";
+			text="@STR_MAR_Police_HQ";
+			type="mil_box";
+			colorName="ColorWEST";
+			id=217;
+		};
+		class Item97
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3816.7871,15.679439,3129.7671};
+						angles[]={0,3.2799101,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Medical_Assistance"",life_fnc_healHospital];";
+					};
+					id=223;
+					type="B_RangeMaster_F";
+					atlOffset=0.0003862381;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=222;
+			atlOffset=0.0003862381;
+		};
+		class Item98
+		{
+			dataType="Marker";
+			position[]={3828.3123,15,3092.9326};
+			name="medic_spawn_1";
+			type="Empty";
+			angle=277.55301;
+			id=224;
+		};
+		class Item99
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3829.6421,15.708439,3087.4021};
+						angles[]={0,4.8240376,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""mAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""mAir"",0,false,false,"""",' !license_med_mAir && playerSide == independent ']; this addAction[localize""STR_MAR_EMS_Item_Shop"",life_fnc_weaponShopMenu,""med_basic""]; this addAction[localize""STR_MAR_EMS_Clothing_Shop"",life_fnc_clothingMenu,""med_clothing""]; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_1"",""med"",""Kavala Hospital""]]; this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_1"",""med"",""Kavala Hospital""]]; this addAction[localize""STR_MAR_W_Car_Garage"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_car_1""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent']; this addAction[localize""STR_MAR_Helicopter_Garage"",  {   [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""medic_spawn_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent ']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTextureGlobal [0,""textures\medic_uniform.jpg""];";
+					};
+					id=226;
+					type="B_RangeMaster_F";
+					atlOffset=1.7166138e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=225;
+			atlOffset=1.7166138e-005;
+		};
+		class Item100
+		{
+			dataType="Marker";
+			position[]={3828.147,15,3099.5278};
+			name="med_car_1";
+			type="Empty";
+			angle=278.38;
+			id=227;
+		};
+		class Item101
+		{
+			dataType="Marker";
+			position[]={3819.5408,15,3087.9106};
+			name="hospital_marker";
+			text="@STR_MAR_Hospital";
+			type="mil_box";
+			colorName="ColorRed";
+			id=228;
+		};
+		class Item102
+		{
+			dataType="Marker";
+			position[]={3572.042,15,2935.8472};
+			name="civ_spawn_1";
+			type="Empty";
+			id=229;
+		};
+		class Item103
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3608.792,15.001439,3161.3391};
+						angles[]={0,4.8688579,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""market""];";
+					};
+					id=231;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=230;
+		};
+		class Item104
+		{
+			dataType="Marker";
+			position[]={3605.9915,15,3161.6787};
+			name="Gen_3_1";
+			text="@STR_MAR_Market";
+			type="c_unknown";
+			colorName="ColorGreen";
+			id=232;
+		};
+		class Item105
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5345.896,15,3733.5435};
+				angles[]={0,3.8449256,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="air_sp";
+			};
+			id=233;
+			type="Land_HelipadSquare_F";
+		};
+		class Item106
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5332.21,15.001439,3730.106};
+						angles[]={0,1.5562228,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Service_helicopter"",life_fnc_serviceChopper];";
+					};
+					id=235;
+					type="C_man_polo_3_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=234;
+		};
+		class Item107
+		{
+			dataType="Marker";
+			position[]={5345.936,15,3731.6953};
+			name="air_serv_1";
+			text="@STR_MAR_Air_Service";
+			type="respawn_air";
+			id=236;
+		};
+		class Item108
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5352.5542,15.001439,3417.4761};
+						angles[]={0,4.7644343,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Helicopter_Shop"", life_fnc_vehicleShopMenu,[""civ_air"",civilian,[""civ_air_1"",""civ_air_1_2""],""civ"",""Carl's Airial Auto's""]];";
+					};
+					id=238;
+					type="C_man_1_2_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=237;
+		};
+		class Item109
+		{
+			dataType="Marker";
+			position[]={5385.2085,15,3435.8564};
+			name="civ_air_1";
+			type="Empty";
+			angle=90.667999;
+			id=239;
+		};
+		class Item110
+		{
+			dataType="Marker";
+			position[]={5385.2085,15,3399.7407};
+			name="civ_air_1_2";
+			type="Empty";
+			angle=90;
+			id=240;
+		};
+		class Item111
+		{
+			dataType="Marker";
+			position[]={5352.4453,15,3421.8364};
+			name="airshop";
+			text="@STR_MAR_Air_Shop";
+			type="c_air";
+			id=241;
+		};
+		class Item112
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3399.3779,15.985439,3103.1279};
+						angles[]={0,4.8029542,0};
+					};
+					side="Civilian";
+					flags=3;
+					class Attributes
+					{
+						init="this allowDamage false; this enableSimulation false; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""driver"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""driver"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""driver"",0,false,false,"""",' !license_civ_driver && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""boat"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""boat"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""boat"",0,false,false,"""",' !license_civ_boat && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""pilot"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""pilot"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""pilot"",0,false,false,"""",' !license_civ_pilot && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""trucking"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""trucking"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""trucking"",0,false,false,"""",' !license_civ_trucking && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""home"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""home"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""home"",0,false,false,"""",' !license_civ_home && playerSide == civilian ']; this setVariable[""realname"",""License Shop""];";
+						name="license_shop";
+					};
+					id=243;
+					type="C_man_shorts_1_F";
+					atlOffset=0.98400021;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=242;
+			atlOffset=0.98400021;
+		};
+		class Item113
+		{
+			dataType="Marker";
+			position[]={3390.9097,15,3103.481};
+			name="license_shop";
+			text="@STR_MAR_DMV";
+			type="c_car";
+			id=244;
+		};
+		class Item114
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3598.0149,15.001439,3149.606};
+						angles[]={0,1.7162521,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[localize ""STR_MAR_General_Store"",life_fnc_weaponShopMenu,""genstore""];";
+						name="carshop1_3";
+					};
+					id=246;
+					type="C_man_polo_2_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=245;
+		};
+		class Item115
+		{
+			dataType="Marker";
+			position[]={3595.4236,15,3148.501};
+			name="Gen";
+			text="@STR_MAR_General_Store";
+			type="c_unknown";
+			colorName="ColorKhaki";
+			id=247;
+		};
+		class Item116
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3661.667,15.001439,3328.4771};
+						angles[]={0,4.8012781,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[localize ""STR_MAR_Car_shop"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,[""civ_car_1"",""civ_car_1_1""],""civ"",""Bruce's New & Used Auto's""]]; this setVariable[""realname"", ""Car Shop""];";
+						name="carshop1";
+					};
+					id=251;
+					type="C_Driver_1_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=250;
+		};
+		class Item117
+		{
+			dataType="Marker";
+			position[]={3650.1763,15,3339.6099};
+			name="civ_car_1 ";
+			type="Empty";
+			angle=278.58401;
+			id=252;
+		};
+		class Item118
+		{
+			dataType="Marker";
+			position[]={3649.1665,15,3332.084};
+			name="civ_car_1_1";
+			type="Empty";
+			angle=278.58401;
+			id=253;
+		};
+		class Item119
+		{
+			dataType="Marker";
+			position[]={3657.583,15,3329.0137};
+			name="car1";
+			type="c_car";
+			id=254;
+		};
+		class Item120
+		{
+			dataType="Marker";
+			position[]={3657.583,15,3328.4282};
+			name="car1_1";
+			text="@STR_MAR_Car_Shop";
+			type="c_car";
+			id=255;
+		};
+		class Item121
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5448.4482,15.051439,4367.4136};
+						angles[]={0,0.025359632,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Shops_W_Gun"",life_fnc_weaponShopMenu,""gun"",0,false,false,"""",' license_civ_gun && playerSide == civilian']; this addAction[localize ""STR_Shops_C_Gun"",life_fnc_clothingMenu,""gun_clothing"",0,false,false,"""",' license_civ_gun && playerSide == civilian']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""gun"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""gun"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""gun"",0,false,false,"""",' !license_civ_gun && playerSide == civilian '];";
+					};
+					id=257;
+					type="C_man_polo_4_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=256;
+		};
+		class Item122
+		{
+			dataType="Marker";
+			position[]={5448.4956,15,4369.8789};
+			name="gun_store_1";
+			text="@STR_MAR_Gun_Store";
+			type="loc_Bunker";
+			colorName="ColorBlue";
+			id=258;
+		};
+		class Item123
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3610.3911,15.001439,3174.4121};
+						angles[]={0,4.7954493,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Clothing_Store"",life_fnc_clothingMenu,""bruce""];";
+					};
+					id=260;
+					type="C_man_polo_6_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=259;
+		};
+		class Item124
+		{
+			dataType="Marker";
+			position[]={3605.4084,15,3174.9565};
+			name="Gen_3";
+			text="@STR_MAR_Bruce_Outfits";
+			type="c_unknown";
+			colorName="ColorKhaki";
+			id=261;
+		};
+		class Item125
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3609.9761,16.286148,3177.0139};
+				angles[]={0,1.6968614,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+			};
+			id=262;
+			type="Land_Atm_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableStamina";
+					expression="_this enablestamina _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item126
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3593.229,16.386148,3126.1389};
+				angles[]={0,3.264045,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+			};
+			id=263;
+			type="Land_Atm_02_F";
+			atlOffset=9.5367432e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableStamina";
+					expression="_this enablestamina _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item127
+		{
+			dataType="Marker";
+			position[]={3592.7126,15.099999,3122.4292};
+			name="atm_marker";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=264;
+		};
+		class Item128
+		{
+			dataType="Marker";
+			position[]={3609.8979,15,3177.5996};
+			name="atm_marker_1";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			id=265;
+		};
+		class Item129
+		{
+			dataType="Marker";
+			position[]={3661.624,15,3148.0112};
+			name="city";
+			type="Empty";
+			id=266;
+		};
+		class Item130
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3405.9763,8.7795897,2653.8499};
+						angles[]={0,0.19577359,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false; this enableSimulation false; this addAction[localize ""STR_MAR_Fish_Market"",life_fnc_virt_menu,""fishmarket""];";
+					};
+					id=268;
+					type="C_man_shorts_3_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=267;
+		};
+		class Item131
+		{
+			dataType="Marker";
+			position[]={3405.009,2.2393548,2650.3472};
+			name="fish_market_1";
+			text="@STR_MAR_Fish_Market";
+			type="c_unknown";
+			colorName="ColorGreen";
+			id=270;
+		};
+		class Item132
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4187.2632,4.7309904,2358.8281};
+						angles[]={0,0.87392122,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false;  removeallWeapons this;  this enableSimulation false;  this addAction[localize""STR_MAR_Diving_Shop"",life_fnc_clothingMenu,""dive""];  this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""displayName"")),[(getNumber(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""dive"",0,false,false,"""",' !license_civ_dive && playerSide == civilian '];";
+					};
+					id=272;
+					type="C_man_shorts_4_F";
+					atlOffset=0.0002746582;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=271;
+			atlOffset=0.0002746582;
+		};
+		class Item133
+		{
+			dataType="Marker";
+			position[]={4190.7061,-12.439819,2361.7388};
+			name="dive_shop";
+			text="@STR_MAR_Diving_Shop";
+			type="mil_triangle";
+			colorName="ColorKhaki";
+			id=273;
+		};
+		class Item134
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3844.762,15.001439,4635.2397};
+						angles[]={0,0.27408651,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Truck_Shop"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,""civ_truck_1"",""civ"",""Bruce's New & Used Trucks""]];";
+						name="carshop1_2";
+					};
+					id=275;
+					type="C_Driver_4_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableSimulation";
+							expression="if !(is3DEN) then {_this enablesimulation _value;};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=274;
+		};
+		class Item135
+		{
+			dataType="Marker";
+			position[]={3847.7026,15,4642.7412};
+			name="civ_truck_shop1";
+			text="@STR_MAR_Truck_Shop";
+			type="c_car";
+			id=276;
+		};
+		class Item136
+		{
+			dataType="Marker";
+			position[]={3847.1094,15,4649.7139};
+			name="civ_truck_1";
+			type="Empty";
+			angle=276.44696;
+			id=277;
+		};
+		class Item137
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4192.9531,4.7030587,2293.363};
+						angles[]={0,1.6494408,0};
+					};
+					side="Civilian";
+					flags=3;
+					class Attributes
+					{
+						init="this enableSimulation false;  this allowDamage false;  this addAction[localize""STR_MAR_Boat_Shop"",life_fnc_vehicleShopMenu,[""civ_ship"",civilian,""civ_ship_1"",""civ"",""Billy's Boat Rentals & Ownership""]];  this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Ship"",player] remoteExecCall [""TON_fnc_getVehicles"",2];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_ship_1""; life_garage_type = ""Ship"";  },"""",0,false,false,"""",'playerSide == civilian'];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					};
+					id=279;
+					type="C_man_shorts_2_F";
+					atlOffset=8.7356396;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=278;
+			atlOffset=8.7356396;
+		};
+		class Item138
+		{
+			dataType="Marker";
+			position[]={4175.7603,-22.026173,2304.5786};
+			name="civ_ship_1";
+			type="Empty";
+			angle=188.85699;
+			id=280;
+		};
+		class Item139
+		{
+			dataType="Marker";
+			position[]={4193.3228,-16.697481,2289.1069};
+			name="boat_2";
+			text="@STR_MAR_Boat_Shop";
+			type="c_ship";
+			id=281;
+		};
+		class Item140
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3546.085,15.020439,3232.6741};
+						angles[]={0,4.8605151,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2]; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_1"";  }];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					};
+					id=283;
+					type="C_Driver_3_F";
+					atlOffset=0.00018596649;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=282;
+			atlOffset=0.00018596649;
+		};
+		class Item141
+		{
+			dataType="Marker";
+			position[]={3539.5313,15.022733,3236.0977};
+			name="car_g_1";
+			type="Empty";
+			angle=186.873;
+			id=284;
+		};
+		class Item142
+		{
+			dataType="Marker";
+			position[]={3543.7251,15,3232.8726};
+			name="civ_gar_1";
+			text="@STR_MAR_Garage";
+			type="c_car";
+			id=285;
+		};
+	};
+};
