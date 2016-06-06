@@ -166,7 +166,7 @@ class Licenses {
     class cAir {
         variable = "cAir";
         displayName = "STR_License_Pilot";
-        price = 15000;
+        price = 0;
         illegal = false;
         side = "cop";
     };
@@ -174,7 +174,7 @@ class Licenses {
     class cg {
         variable = "cg";
         displayName = "STR_License_CG";
-        price = 8000;
+        price = 0;
         illegal = false;
         side = "cop";
     };
@@ -183,7 +183,7 @@ class Licenses {
     class mAir {
         variable = "mAir";
         displayName = "STR_License_Pilot";
-        price = 15000;
+        price = 0;
         illegal = false;
         side = "med";
     };
