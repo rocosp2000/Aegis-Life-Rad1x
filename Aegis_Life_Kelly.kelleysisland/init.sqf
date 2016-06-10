@@ -4,3 +4,8 @@ StartProgress = false;
 [] execVM "KRON_Strings.sqf";
 
 StartProgress = true;
+
+//Custom Scripts
+execvm "custom\windShield.sqf";
+execvm "custom\jump.sqf";
+nul=[] execVM "custom\IntLight.sqf";
